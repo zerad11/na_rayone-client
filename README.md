@@ -34,6 +34,27 @@ CTRL+C
 
 ```https://ca151fec-6c76-4e9d-a03e-35d19d7bc744.mock.pstmn.io/```
 
+# Шпаргалки по технологиям.
+
+Использование [Git](https://git-scm.com/book/ru/v2):
+```
+#  Клонирование репозитория на локальную машину по HTTPS.
+
+git clone https://github.com/Jelister203/na-rayone-backend.git
+```
+
+- Клонировать репозиторий можно и по ssh, тут как умеешь. [Статья](https://stackoverflow.com/questions/11041729/git-clone-with-https-or-ssh-remote) по поводу разницы между HTTPS и SSH.
+
+```
+#  Пуши, стэши и коммиты.
+
+git add . #  Фиксирует изменения во всех файлах и директориях, за исключением тех, что описаны в .gitignore.
+git commit -m "My Awesome New Commit" #  Создает из зафиксированных изменений новый коммит с сообщением "My Awesome New Commit".
+git push #  Пушит изменения 
+
+git stash . #  Удаляет все изменения и "откатывает" проект до последнего pull'а или commit'а.
+```
+
 к ней просто добавте /shop/{id} и тд 
 
 
