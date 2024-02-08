@@ -1,10 +1,13 @@
 import React from 'react';
 import './styles/App.css';
+import axios from 'axios';
+import { Categories } from './components/Categories';
 
 function App() {
+
     return (
         <div className='App'>
-            <b>ВСЕ РАБОТАЕТ</b>
+            <Categories/>
         </div>
     )
 }
