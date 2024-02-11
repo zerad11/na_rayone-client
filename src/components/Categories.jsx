@@ -1,15 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import { getAll } from '../API/getAll';
+
 
 export const Categories = () => {
     const [categories, setCategories] = useState([])
-    async function getCategories() {
-        const response = await axios.get('https://ca151fec-6c76-4e9d-a03e-35d19d7bc744.mock.pstmn.io/categories/');
-        setCategories(response.data.categories)
-    }
+    
 
     useEffect(() => {
-        getCategories()
+        async function fetchCategories() {
+            try {
+                const response = await getAll('categories');
+                setCategories(response.data.categories);
+            } catch (error) {
+               alert(error.message)
+            }
+        }
+
+        fetchCategories()
     }, [])
 
    return(
