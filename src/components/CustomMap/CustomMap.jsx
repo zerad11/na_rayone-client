@@ -1,6 +1,6 @@
 import GoogleMapReact from "google-map-react";
-import "../../styles/App.css";
-const AnyReactComponent = ({ text }) => <div className={"customMarker"}>{text}</div>;
+import styles from "./CustomMap.module.css";
+const AnyReactComponent = ({ text }) => <div className={styles.customMarker}>{text}</div>;
 
 
 function CustomMap() {
